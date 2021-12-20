@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="thai-share-gateway" />
+        <module name="thai-share-user" />
+        <module name="thai-share-vehicle" />
+        <module name="thai-share-common" />
+        <module name="thai-share-plan" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crazy-thai-share" target="1.8" />
+      <module name="thai-share-common" target="11" />
+      <module name="thai-share-gateway" target="11" />
+      <module name="thai-share-plan" target="11" />
+      <module name="thai-share-user" target="11" />
+      <module name="thai-share-vehicle" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

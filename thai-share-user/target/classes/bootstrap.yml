@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /sysUser/
+
+spring:
+  application:
+    name: nacos-service-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 8.136.17.98:8848
+      config:
+        server-addr: 8.136.17.98:8848
+        file-extension: yaml
+        group: SHARE_GROUP
+  main:
+    allow-bean-definition-overriding: true

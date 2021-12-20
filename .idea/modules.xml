@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/crazy-thai-share.iml" filepath="$PROJECT_DIR$/crazy-thai-share.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thai-share-common/thai-share-common.iml" filepath="$PROJECT_DIR$/thai-share-common/thai-share-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thai-share-gateway/thai-share-gateway.iml" filepath="$PROJECT_DIR$/thai-share-gateway/thai-share-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thai-share-plan/thai-share-plan.iml" filepath="$PROJECT_DIR$/thai-share-plan/thai-share-plan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thai-share-user/thai-share-user.iml" filepath="$PROJECT_DIR$/thai-share-user/thai-share-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thai-share-vehicle/thai-share-vehicle.iml" filepath="$PROJECT_DIR$/thai-share-vehicle/thai-share-vehicle.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /vehicle/
+
+spring:
+  application:
+    name: nacos-service-vehicle
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 8.136.17.98:8848
+      config:
+        server-addr: 8.136.17.98:8848
+        file-extension: yaml
+        group: SHARE_GROUP
+
+  main:
+    allow-bean-definition-overriding: true

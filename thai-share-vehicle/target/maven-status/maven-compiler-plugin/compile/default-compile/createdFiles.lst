@@ -1,0 +1,11 @@
+com\jiangfendou\share\entity\Make.class
+com\jiangfendou\share\model\request\SearchMakeRequest.class
+com\jiangfendou\share\config\generator\GeneratorCodeConfig.class
+com\jiangfendou\share\controller\MakeController.class
+com\jiangfendou\share\mapper\MakeMapper.class
+com\jiangfendou\share\model\response\searchMakeResponse.class
+com\jiangfendou\share\service\MakeService.class
+com\jiangfendou\share\config\MybatisPlusConfig.class
+com\jiangfendou\share\model\request\AddMakeRequest.class
+com\jiangfendou\share\VehicleApplication.class
+com\jiangfendou\share\service\impl\MakeServiceImpl.class

@@ -1,0 +1,11 @@
+com\jiangfendou\share\controller\UserController.class
+com\jiangfendou\share\model\response\SearchUserPermissionResponse$PermissionResponse.class
+com\jiangfendou\share\config\AuthorizationConfig.class
+com\jiangfendou\share\entity\User.class
+com\jiangfendou\share\service\impl\UserServiceImpl.class
+com\jiangfendou\share\service\UserService.class
+com\jiangfendou\share\UserUaaApplication.class
+com\jiangfendou\share\config\WebSecurityConfig.class
+com\jiangfendou\share\model\response\SearchUserPermissionResponse.class
+com\jiangfendou\share\config\TokenConfig.class
+com\jiangfendou\share\mapper\UserMapper.class

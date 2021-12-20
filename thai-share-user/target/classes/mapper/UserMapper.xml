@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiangfendou.share.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jiangfendou.share.entity.User">
+        <result column="id" property="id" />
+        <result column="user_name" property="userName" />
+        <result column="user_password" property="userPassword" />
+        <result column="full_name" property="fullName" />
+        <result column="mobile" property="mobile" />
+        <result column="lock_version" property="lockVersion" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="creator" property="creator" />
+        <result column="create_datetime" property="createDatetime" />
+        <result column="delete_datetime" property="deleteDatetime" />
+        <result column="updater" property="updater" />
+        <result column="update_datetime" property="updateDatetime" />
+    </resultMap>
+
+    <resultMap id="userPermissionMap" type="com.jiangfendou.share.model.response.SearchUserPermissionResponse">
+        <result column="role_name" property="roleName" />
+        <collection property="permissions" javaType="java.util.ArrayList"
+                    ofType="com.jiangfendou.share.model.response.SearchUserPermissionResponse$PermissionResponse">
+            <result column="code" property="code" />
+        </collection>
+    </resultMap>
+
+    <select id="searchUserPermission" resultMap="userPermissionMap" parameterType="java.lang.String">
+        SELECT
+            t3.role_name,
+            t5.code
+        FROM
+            USER t1
+        INNER JOIN user_role t2 ON t1.id = t2.user_id
+        INNER JOIN role t3 ON t3.id = t2.role_id
+        INNER JOIN role_permission t4 ON t4.role_id = t3.id
+        INNER JOIN permission t5 ON t4.permission_id = t5.id
+        WHERE
+            t1.id = #{userId}
+    </select>
+</mapper>

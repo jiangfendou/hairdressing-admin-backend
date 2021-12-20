@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiangfendou.share.mapper.MakeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jiangfendou.share.entity.Make">
+        <id column="make_id" property="makeId" />
+        <result column="make_code" property="makeCode" />
+        <result column="make_name" property="makeName" />
+        <result column="is_active" property="isActive" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="lock_version" property="lockVersion" />
+        <result column="creator" property="creator" />
+        <result column="create_datetime" property="createDatetime" />
+        <result column="updater" property="updater" />
+        <result column="update_datetime" property="updateDatetime" />
+        <result column="delete_datetime" property="deleteDatetime" />
+    </resultMap>
+
+</mapper>
